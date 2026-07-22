@@ -1,0 +1,218 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    overflow:hidden;
+    height:100vh;
+    background:linear-gradient(135deg,#ffd6e8,#ffc0cb,#ffe4ef);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+}
+
+/* Main Card */
+
+.container{
+    width:90%;
+    max-width:700px;
+    text-align:center;
+    padding:40px;
+    background:rgba(255,255,255,0.25);
+    backdrop-filter:blur(12px);
+    border-radius:30px;
+    box-shadow:0 15px 40px rgba(255,105,180,.3);
+    z-index:100;
+}
+
+h1{
+    font-size:55px;
+    color:#ff1493;
+}
+
+h2{
+    font-size:38px;
+    color:#ff4da6;
+    margin-top:10px;
+}
+
+h3{
+    color:#ff5ca8;
+    margin-bottom:20px;
+}
+
+p{
+    margin-top:25px;
+    font-size:22px;
+    color:#6d214f;
+}
+
+button{
+    margin-top:35px;
+    padding:16px 45px;
+    border:none;
+    border-radius:50px;
+    background:#ff4d94;
+    color:white;
+    font-size:20px;
+    cursor:pointer;
+    transition:.3s;
+    box-shadow:0 10px 25px rgba(255,20,147,.4);
+}
+
+button:hover{
+    transform:scale(1.08);
+    background:#ff2e82;
+}
+
+/* Floating Hearts */
+
+.hearts{
+    position:absolute;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+}
+
+.hearts span{
+    position:absolute;
+    bottom:-50px;
+    font-size:30px;
+    animation:floatHeart linear infinite;
+}
+
+.hearts span:nth-child(1){left:8%;animation-duration:8s;}
+.hearts span:nth-child(2){left:20%;animation-duration:10s;}
+.hearts span:nth-child(3){left:35%;animation-duration:7s;}
+.hearts span:nth-child(4){left:50%;animation-duration:12s;}
+.hearts span:nth-child(5){left:65%;animation-duration:9s;}
+.hearts span:nth-child(6){left:78%;animation-duration:11s;}
+.hearts span:nth-child(7){left:88%;animation-duration:8s;}
+.hearts span:nth-child(8){left:95%;animation-duration:10s;}
+
+@keyframes floatHeart{
+
+0%{
+transform:translateY(0) scale(.7);
+opacity:0;
+}
+
+20%{
+opacity:1;
+}
+
+100%{
+transform:translateY(-110vh) scale(1.4);
+opacity:0;
+}
+
+}
+
+/* Balloons */
+
+.balloon{
+    position:absolute;
+    width:70px;
+    height:90px;
+    border-radius:50%;
+    bottom:-120px;
+    animation:balloons 15s linear infinite;
+}
+
+.balloon:after{
+    content:"";
+    position:absolute;
+    width:2px;
+    height:80px;
+    background:#888;
+    left:34px;
+    top:90px;
+}
+
+.balloon1{
+left:10%;
+background:#ff66b3;
+animation-delay:0s;
+}
+
+.balloon2{
+left:35%;
+background:#ff99cc;
+animation-delay:3s;
+}
+
+.balloon3{
+left:60%;
+background:#ff4d94;
+animation-delay:6s;
+}
+
+.balloon4{
+left:85%;
+background:#ffcce6;
+animation-delay:9s;
+}
+
+@keyframes balloons{
+
+0%{
+transform:translateY(0);
+}
+
+100%{
+transform:translateY(-130vh);
+}
+
+}
+
+/* Button Pulse */
+
+button{
+animation:pulse 2s infinite;
+}
+
+@keyframes pulse{
+
+0%{
+box-shadow:0 0 0 0 rgba(255,20,147,.5);
+}
+
+70%{
+box-shadow:0 0 0 25px rgba(255,20,147,0);
+}
+
+100%{
+box-shadow:0 0 0 0 rgba(255,20,147,0);
+}
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+h1{
+font-size:42px;
+}
+
+h2{
+font-size:30px;
+}
+
+.container{
+padding:25px;
+}
+
+button{
+font-size:18px;
+padding:14px 30px;
+}
+
+}

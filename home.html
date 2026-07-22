@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>7 Surprises 💖</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+
+body{
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+    background:linear-gradient(135deg,#ffd6e8,#ffe6f2,#fff0f5);
+}
+
+/* Container */
+
+.home{
+    text-align:center;
+    padding:50px 20px;
+}
+
+.home h1{
+    color:#ff2d7a;
+    font-size:50px;
+}
+
+.home h2{
+    color:#ff5c99;
+}
+
+.home p{
+    color:#7d3b5c;
+    font-size:20px;
+}
+
+/* Grid */
+
+.grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+
+gap:25px;
+
+margin-top:50px;
+
+padding:20px;
+
+}
+
+/* Cards */
+
+.card{
+
+background:white;
+
+border-radius:25px;
+
+padding:30px;
+
+cursor:pointer;
+
+transition:.4s;
+
+box-shadow:0 10px 25px rgba(255,105,180,.25);
+
+}
+
+.card:hover{
+
+transform:translateY(-10px) scale(1.05);
+
+background:#ffe6f2;
+
+}
+
+.card h3{
+
+font-size:24px;
+
+color:#ff2d7a;
+
+}
+
+.card p{
+
+font-size:17px;
+
+}
+
+/* Floating Hearts */
+
+.hearts{
+
+position:fixed;
+
+width:100%;
+
+height:100%;
+
+pointer-events:none;
+
+overflow:hidden;
+
+}
+
+.hearts span{
+
+position:absolute;
+
+bottom:-50px;
+
+font-size:25px;
+
+animation:float 10s linear infinite;
+
+}
+
+.hearts span:nth-child(1){left:10%;}
+.hearts span:nth-child(2){left:25%;animation-duration:8s;}
+.hearts span:nth-child(3){left:40%;animation-duration:12s;}
+.hearts span:nth-child(4){left:55%;animation-duration:9s;}
+.hearts span:nth-child(5){left:70%;animation-duration:11s;}
+.hearts span:nth-child(6){left:85%;animation-duration:7s;}
+
+@keyframes float{
+
+0%{
+transform:translateY(0);
+opacity:0;
+}
+
+20%{
+opacity:1;
+}
+
+100%{
+transform:translateY(-120vh);
+opacity:0;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="hearts">
+<span>❤️</span>
+<span>💕</span>
+<span>💖</span>
+<span>💗</span>
+<span>💞</span>
+<span>💝</span>
+</div>
+
+<div class="home">
+
+<h1>🎉 Welcome Asritha 💖</h1>
+
+<h2>7 Years • 7 Surprises</h2>
+
+<p>
+Choose any surprise below ❤️
+</p>
+
+<div class="grid">
+
+<div class="card" onclick="location.href='journey.html'">
+<h3>💖 Our Journey</h3>
+<p>Our friendship from Intermediate until today.</p>
+</div>
+
+<div class="card" onclick="location.href='memories.html'">
+<h3>📸 Memory Box</h3>
+<p>Beautiful memories captured forever.</p>
+</div>
+
+<div class="card" onclick="location.href='song.html'">
+    <h3>🎵 An Audio For You</h3>
+    <p>Press play and enjoy this little surprise.</p>
+</div>
+
+<div class="card" onclick="location.href='special.html'">
+    <h3>🌼 Why You're Special</h3>
+    <p>7 reasons why I'm grateful to have you as my friend.</p>
+</div>
+
+<div class="card" onclick="location.href='letter.html'">
+<h3>💌 A Letter</h3>
+<p>A special message just for you.</p>
+</div>
+
+<div class="card" onclick="location.href='wishes.html'">
+<h3>⭐ 7 Wishes</h3>
+<p>Seven heartfelt wishes for your future.</p>
+</div>
+
+<div class="card" onclick="location.href='finale.html'">
+<h3>✨ Final Surprise</h3>
+<p>The biggest surprise of all.</p>
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Journey ❤️</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+
+body{
+    margin:0;
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(135deg,#ffd6e8,#ffeaf4,#fff5fa);
+    overflow-x:hidden;
+}
+
+/* Floating Hearts */
+
+.hearts{
+    position:fixed;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    pointer-events:none;
+}
+
+.hearts span{
+    position:absolute;
+    bottom:-50px;
+    font-size:25px;
+    animation:floatHeart 10s linear infinite;
+}
+
+.hearts span:nth-child(1){left:8%;}
+.hearts span:nth-child(2){left:22%;animation-duration:8s;}
+.hearts span:nth-child(3){left:40%;animation-duration:12s;}
+.hearts span:nth-child(4){left:58%;animation-duration:9s;}
+.hearts span:nth-child(5){left:75%;animation-duration:11s;}
+.hearts span:nth-child(6){left:90%;animation-duration:7s;}
+
+@keyframes floatHeart{
+
+0%{
+transform:translateY(0);
+opacity:0;
+}
+
+20%{
+opacity:1;
+}
+
+100%{
+transform:translateY(-120vh);
+opacity:0;
+}
+
+}
+
+.container{
+
+max-width:900px;
+margin:auto;
+padding:60px 20px;
+text-align:center;
+
+}
+
+.container h1{
+
+color:#ff2d7a;
+font-size:50px;
+
+}
+
+.subtitle{
+
+color:#6d214f;
+font-size:22px;
+margin-bottom:40px;
+
+}
+
+/* Timeline */
+
+.timeline{
+
+position:relative;
+margin-top:50px;
+
+}
+
+.timeline::before{
+
+content:"";
+position:absolute;
+left:50%;
+width:6px;
+background:#ff7eb6;
+top:0;
+bottom:0;
+transform:translateX(-50%);
+border-radius:10px;
+
+}
+
+.item{
+
+width:45%;
+padding:20px;
+background:white;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(255,105,180,.25);
+margin-bottom:40px;
+position:relative;
+animation:fadeIn 1s ease;
+
+}
+
+.left{
+
+margin-right:auto;
+
+}
+
+.right{
+
+margin-left:auto;
+
+}
+
+.item h2{
+
+color:#ff2d7a;
+
+}
+
+.item p{
+
+font-size:18px;
+color:#555;
+
+}
+
+@keyframes fadeIn{
+
+from{
+
+opacity:0;
+transform:translateY(40px);
+
+}
+
+to{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+}
+
+.footer{
+
+margin-top:60px;
+
+}
+
+button{
+
+padding:15px 35px;
+border:none;
+border-radius:50px;
+background:#ff4d94;
+color:white;
+font-size:18px;
+cursor:pointer;
+transition:.3s;
+
+}
+
+button:hover{
+
+transform:scale(1.08);
+
+}
+
+@media(max-width:768px){
+
+.timeline::before{
+
+left:20px;
+
+}
+
+.item{
+
+width:90%;
+margin-left:40px !important;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="hearts">
+
+<span>❤️</span>
+<span>💕</span>
+<span>💖</span>
+<span>💗</span>
+<span>💞</span>
+<span>💝</span>
+
+</div>
+
+<div class="container">
+
+<h1>💖 Our Journey 💖</h1>
+
+<p class="subtitle">
+Every friendship has a beautiful story...
+Ours is my favorite one. 🌸
+</p>
+
+<div class="timeline">
+
+<div class="item left">
+
+<h2>🌸 Year 1</h2>
+
+<p>
+We met during Intermediate.
+Little did we know that this friendship would become so special.
+</p>
+
+</div>
+
+<div class="item right">
+
+<h2>😊 Year 2</h2>
+
+<p>
+We laughed together, shared secrets,
+and slowly became best friends.
+</p>
+
+</div>
+
+<div class="item left">
+
+<h2>💕 Year 3</h2>
+
+<p>
+No matter how busy life became,
+our friendship stayed strong.
+</p>
+
+</div>
+
+<div class="item right">
+
+<h2>🌈 Year 4</h2>
+
+<p>
+We celebrated achievements,
+supported each other,
+and made unforgettable memories.
+</p>
+
+</div>
+
+<div class="item left">
+
+<h2>💪 Year 5</h2>
+
+<p>
+We faced challenges,
+but our friendship became even stronger.
+</p>
+
+</div>
+
+<div class="item right">
+
+<h2>✨ Year 6</h2>
+
+<p>
+More laughter,
+more memories,
+and endless conversations.
+</p>
+
+</div>
+
+<div class="item left">
+
+<h2>🎂 Year 7</h2>
+
+<p>
+Seven beautiful years later...
+I'm grateful to have a friend like you.
+Thank you for always being there.
+Happy Birthday Asritha! ❤️
+</p>
+
+</div>
+
+</div>
+
+<div class="footer">
+
+<button onclick="location.href='home.html'">
+🏠 Back to Home
+</button>
+
+</div>
+
+</div>
+
+</body>
+</html>

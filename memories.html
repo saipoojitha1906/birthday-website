@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Memory Box 💕</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+
+body{
+    margin:0;
+    font-family:Poppins,sans-serif;
+    background:linear-gradient(135deg,#ffd6e8,#ffeaf4,#fff7fb);
+    overflow-x:hidden;
+}
+
+/* Floating Hearts */
+.hearts{
+    position:fixed;
+    width:100%;
+    height:100%;
+    pointer-events:none;
+    overflow:hidden;
+}
+
+.hearts span{
+    position:absolute;
+    bottom:-50px;
+    font-size:24px;
+    animation:float 10s linear infinite;
+}
+
+.hearts span:nth-child(1){left:10%;}
+.hearts span:nth-child(2){left:25%;animation-duration:8s;}
+.hearts span:nth-child(3){left:40%;animation-duration:11s;}
+.hearts span:nth-child(4){left:60%;animation-duration:9s;}
+.hearts span:nth-child(5){left:80%;animation-duration:12s;}
+
+@keyframes float{
+0%{transform:translateY(0);opacity:0;}
+20%{opacity:1;}
+100%{transform:translateY(-120vh);opacity:0;}
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:40px;
+    text-align:center;
+}
+
+h1{
+    color:#ff2d7a;
+    font-size:48px;
+}
+
+.subtitle{
+    color:#6b2151;
+    font-size:20px;
+    margin-bottom:40px;
+}
+
+/* Gallery */
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+/* Polaroid */
+
+.photo{
+    background:white;
+    padding:12px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(255,105,180,.3);
+    transition:.4s;
+}
+
+.photo:hover{
+    transform:scale(1.05) rotate(-2deg);
+}
+
+.photo img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.caption{
+    padding:15px;
+    color:#ff2d7a;
+    font-size:18px;
+    font-weight:bold;
+}
+
+button{
+    margin-top:40px;
+    padding:15px 35px;
+    border:none;
+    border-radius:50px;
+    background:#ff4d94;
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+}
+
+button:hover{
+    transform:scale(1.05);
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="hearts">
+<span>❤️</span>
+<span>💕</span>
+<span>💖</span>
+<span>💗</span>
+<span>💞</span>
+</div>
+
+<div class="container">
+
+<h1>📸 Memory Box 💖</h1>
+
+<p class="subtitle">
+Every picture tells a story... ❤️
+</p>
+
+<div class="gallery">
+
+<div class="photo">
+<img src="images/photo1.jpeg" alt="Photo 1">
+<div class="caption">The beginning of our friendship 🌸</div>
+</div>
+
+<div class="photo">
+<img src="images/photo2.jpeg" alt="Photo 2">
+<div class="caption">One unforgettable day 💕</div>
+</div>
+
+<div class="photo">
+<img src="images/photo3.jpeg" alt="Photo 3">
+<div class="caption">Smiles we'll never forget 😊</div>
+</div>
+
+<div class="photo">
+<img src="images/photo4.jpeg" alt="Photo 4">
+<div class="caption">Always together ❤️</div>
+</div>
+
+<div class="photo">
+<img src="images/photo5.jpeg" alt="Photo 5">
+<div class="caption">Another beautiful memory 🌷</div>
+</div>
+
+<div class="photo">
+<img src="images/photo6.jpeg" alt="Photo 6">
+<div class="caption">Through every season 💖</div>
+</div>
+
+<div class="photo">
+<img src="images/photo7.jpeg" alt="Photo 7">
+<div class="caption">7 Years of Friendship 🎉</div>
+</div>
+
+</div>
+
+<button onclick="location.href='home.html'">
+🏠 Back to Home
+</button>
+
+</div>
+
+</body>
+</html>
